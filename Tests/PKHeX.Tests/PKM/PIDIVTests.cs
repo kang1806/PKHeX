@@ -231,7 +231,7 @@ namespace PKHeX.Tests.PKM
             const uint seed = 0x2E15555E;
             const uint rand0 = 0x20AD96A9;
             const uint rand1 = 0x7E1DBEC8;
-            var pidseeds = MethodFinder.GetSeedsFromPIDEuclid(RNG.XDRNG, rand0 >> 16,            rand1 >> 16);
+            var pidseeds = MethodFinder.GetSeedsFromPIDEuclid(RNG.XDRNG, rand0 >> 16, rand1 >> 16);
             var ivseeds = MethodFinder.GetSeedsFromIVsEuclid(RNG.XDRNG, (rand0 >> 16) & 0x7FFF, (rand1 >> 16) & 0x7FFF);
             Assert.IsTrue(pidseeds.Any(z => z == seed));
             Assert.IsTrue(ivseeds.Any(z => z == seed));
