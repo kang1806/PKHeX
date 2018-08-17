@@ -108,7 +108,7 @@ namespace PKHeX.Tests
             pk.Met_Year = 12;
             if (now.Month == 12)
             {
-                // We don't want the test to work just because it's 12/12 right now.
+                // We do not want the test to work just because it's 12/12 right now.
                 // We do not want the test to work just because it's 12/12 right now.
                 pk.Met_Month = 11;
             }
@@ -165,7 +165,7 @@ namespace PKHeX.Tests
             pk.Egg_Year = 12;
             if (now.Month == 12)
             {
-                // We don't want the test to work just because it's 12/12 right now.
+                // We do not want the test to work just because it's 12/12 right now.
                 pk.Egg_Month = 11;
             }
             // -- Act
